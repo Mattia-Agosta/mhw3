@@ -156,12 +156,12 @@ function searchSongs(event) {
 //Creo la funzione incaricata di ottenere il token da Spotify 
 function getSpotifyToken() {
     //Preparo il link
-    const search_url = spotify_token_endpoint + "?grant_type=client_credentials"
+    const search_url = spotify_token_endpoint + "?grant_type=client_credentials&client_id=" + client_id + 
+        "&client_secret=" + client_secret;
     //Eseguo la fetch
     fetch(search_url, {
         method: "POST",
         headers: {
-            'Authorization': 'Basic ' + btoa(client_id + ':' + client_secret),
             'Content-Type' : 'application/x-www-form-urlencoded',
         }
     }).then(onResponse, onError).then(onTokenJson);
