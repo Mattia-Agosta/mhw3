@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <title>Le mie cinque band preferite</title>
+    <meta charset="utf-8">
+    <!-- Importo un font da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+    <!-- tag per la visualizzazione mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script src = "script.js" defer = "true"></script>
+  </head>
+  <body>
+    <!-- Il nav è la barra superiore comprendente il menù di navigazione del sito -->
+    <nav>
+     <div id="display_pc">
+        <a href='#'>
+          <div class="nav_item"> Home </div>
+        </a>
+        <a href='#'>
+          <div class="nav_item"> Storia </div>
+        </a>
+        <a href='#'>
+          <div class="nav_item"> Altro </div>
+        </a>
+        <a href='#'>
+          <div class="nav_item"> Contatti </div>
+        </a>
+      </div>
+      <div id="display_mobile">
+        <a href='#'>
+          <div class="nav_mobile"> Home </div>
+        </a>
+        <a href='#'>
+          <div class="nav_mobile"> Menu </div>
+        </a>
+      </div>
+    </nav>
+    <!-- L'header contiene un titolo ed un'immagine di sfondo -->
+    <header>
+      <div id="overlay"> </div>
+      <h1>
+        Le mie cinque bands preferite
+      </h1>
+    </header>
+    <div id="propic">
+      <img
+      src='images/logo.jpg'>
+      <div id="propic_name">Mattia Agosta </div>
+      <div id="propic_sub"> Creato il 18/04/23 </div>
+    </div>
+
+    <!-- La section comprende tutte le informazioni della pagina (la top 5), divise in blocchi -->
+    <section>
+      <!-- Ogni blocco di informazioni appartiene alla classe "entry"-->
+      <div class="entry">
+        <!-- Ad ogni porzione di testo che necessita di un suo stile assegno una classe -->
+        <h2>Queen</h2> 
+        <em class="subtitle">Periodo di attività: 1970-1997</em>
+        <p> Mi sembra doveroso inserire in classifica quella che è è probabilmente la band più iconica
+          di tutti i tempi. I Queen sono arrivati ed hanno cambiato la musica ed il modo di suonare. Dal 
+          loro debutto tra il grande pubblico con <em>Killer Queen</em> fino alla triste <em>The Show Must Go On</em>
+          i brani dei Queen hanno fatto il giro del mondo e continuano a farlo ancora oggi, grazie anche alla 
+          popolarità tra le nuove generazioni ottenuta grazie al <em>Bohemian Rhapsody</em>, che ha elevato il 
+          frontman del gruppo Freddie Mercury alla gloria eterna (non che prima non ne fosse degno!). La performance
+          al concerto Live Aid è semplicemente sensazionale. Ammetto di non conoscere molte delle canzoni della band, 
+          a parte le più famose, ma non potevo lasciare fuori il gruppo che più di tutti ha rivoluzionato il mondo della musica. 
+          Potrei continuare con gli elogi, ma eviterò mollichismi.
+          <div class="ending"> Brano preferito: <em>Bohemian Rhapsody</em>. </div>
+          <!-- Creo un div specifico per il numero -->
+          <div class="number"> 5. </div>
+        </p>
+        <!-- Aggiungo l'immagine per completare la posizione -->
+        <img src='images/queen.jpg'>
+        </div>
+      <!-- Scrivo le altre posizioni in modo analogo -->
+      <div class="entry">
+        <h2>Pinguini Tattici Nucleari</h2>
+        <em class="subtitle">Periodo di attività: 2010-oggi </em>
+        <p> I PTN sono l'unico gruppo italiano che ho scelto per questa lista. Partiti dal cantare in chiesa,
+          hanno fatto una lunga gavetta che li ha portati a partecipare al Festival di Sanremo nel 2020 con il
+          brano <em>Ringo Starr</em>, dove hanno trovato la ribalta. Io li conoscevo già da qualche tempo prima, 
+          catturato dalle sonorità originali del gruppo e dai testi mai banali e ricchi di riferimenti alla cultura
+          pop, marchio distintivo del gruppo, ben presente ancora oggi. Negli ultimi anni le sonorità delle canzoni sono
+          divenute meno <em>Indie</em> e più <em>Pop</em>, ma ogni volta che sento una loro canzone alla radio, non posso
+          fare a meno di alzare il volume. E in fondo, non è forse vero che <em>In un mondo di John e di Paul
+          siamo tutti Ringo Starr</em>?
+          <div class="ending"> Brano preferito: <em>Cancelleria</em>. </div>
+          <div class="number"> 4. </div>
+        </p>
+        <img
+        src='images/ptn.jpg'>
+      </div>
+
+      <!-- Inserisco la seconda API-->
+      <div id = "jokeAPI">
+        <h3>Per rinfrancar lo spirito... tra una posizione e l'altra!</h3>
+        <div>
+          <span id = "joke_text">Clicca il pulsante qui a fianco per generare una battuta a tema programmazione</span>
+          <button id = "joke_button">Joke button</button>
+        </div>
+        <span id = "joke_content"></span>
+      </div>
+
+      <div class="entry">
+        <h2> Green Day </h2>
+        <em class="subtitle">Periodo di attività: 1986-oggi </em>
+        <p> <em>I don't wanna be an american idiot!</em> Alzi la mano chi non l'ha letta cantando. I Green Day
+            sono uno dei gruppi più di successo degli ultimi 30 anni, vere e proprie icone del <em>
+            Punk Rock</em>, simbolo di ribellione adolescenziale (ma anche di buona musica!). Negli anni la
+            band è maturata molto, componendo brani dal significato profondo e dalla forte carica emotiva, salvo
+            poi tornare a suoni più punk (sebbene con scarso successo). Ogni volta che sento un brano dei Green Day
+            non posso fare a meno che cantare e - se non mi vede nessuno - scatenarmi travolto dalla loro carica.
+            Pensate che hanno pure cantato la sigla dei <em>Simpson</em> in un loro concerto a Springfield! 
+            Di certo vorrà pur dire qualcosa...
+          <div class="ending"> Brano preferito: <em>Basket Case</em>. </div>
+          <div class="number"> 3. </div>
+        </p>
+        <img
+          src='images/green-day.jpg'>
+      </div>
+      <div class="entry">
+       <h2>Imagine Dragons </h2>
+        <em class="subtitle">Periodo di attività: 2008-oggi </em>
+        <p> Natale 2012, mia cugina mi regala "PES 2013" per la Wii. Il gioco vanta una colonna 
+          sonora di tutto rispetto e, tra le canzoni presenti, una mi colpisce in particolare: <em>On Top of The World</em> 
+          di un certo gruppo conosciuto come "Imagine Dragons". Quando qualche tempo dopo il brano fu rilasciato
+          ufficialmente come singolo rimasi senza parole nel sentirlo in radio e da lì a poco ho cominciato ad 
+          ascoltare sempre più canzoni della band, che è diventata una delle mie preferite, facendomi capire
+          la mia passione per l'<em>Alternative Rock</em>. Negli anni gli Imagine Dragons hanno variato poco la loro 
+          formula, strizzando più volte l'occhio al <em>Pop</em>, ma sono sempre stati in grado di comporre brani 
+          orecchiabili e di successo. Degna di menzione è la collaborazione con Elisa per il brano <em>Birds</em>.
+          <div class="ending">Brano preferito: <em>On Top Of The World</em>.</div>
+          <div class="number"> 2. </div>
+        </p>
+        <img src='images/imagine-dragons.jpg'>
+      </div>
+      <div class="entry">
+        <h2> Linkin Park </h2>
+        <em class="subtitle"> Periodo di attività: 1996-2017</em>
+        <p> Al primo posto non posso che mettere la band che mi ha introdotto al genere dell'<em>
+          Alternative Rock</em>. I Linkin Park mi hanno catturato sin dalla prima volta che li ho ascoltati
+          e, riscoprendoli, ho avuto modo di apprezzare tutti i generi musicali che hanno toccato nella loro 
+          carriera, dal <em>Nu Metal</em> all'<em>Electronic Rock</em>. Nati nel 1996 a Los Angeles sotto intuizione 
+          di Mike Shinoda, negli anni hanno mostrato il loro amore per la musica in tante forme diverse, mostrando
+          più e più volte di sapersi reinventare, mettendo a segno collaborazioni sempre interessanti. <br>
+          Uno dei miei sogni era andarli a vedere
+          in concerto, ma purtroppo questo non è più possibile dato che Chester Bennington, il frontman del gruppo,
+          si è tolto la vita ormai quasi 6 anni fa. Ad ogni modo, i Linkin Park hanno segnato la scena musicale come
+          pochi altri gruppi hanno saputo fare, ed hanno lasciato un ricordo indelebile nelle menti di coloro cresciuti
+          negli anni '00 e '10. Immortali.
+          <div class="ending">Brano preferito: <em>Burn It Down</em>.</div>
+          <div class="number">1. </div>
+        </p>
+        <img src='images/linkin-park.jpg'>
+      </div>
+    </section>
+
+    <div id = "iTunesAPI">
+      <h2>Hai voglia di musica?</h2>
+      <span>Hai voglia di ascoltare una canzone? Inserisci il nome di un artista o band per ottenere
+        otto suoi brani dalla libreria di iTunes </span>
+      <form> 
+        <label>Artista: <input type = 'text' id = 'select_Artist' name = 'select_Artist'> </label>
+        <input type = "submit" id = "submit">
+    </form>
+      <div id = "canzoni"></div>
+  </div>
+
+    <!-- Spazio per l'API di Spotify--> 
+    <div id = "SpotifyAPI">
+      <div>
+        <h2> Gli album del momento!</h2>
+        <span>Provided by Spotify</span>
+      </div>
+      <div id = "container">
+      </div>
+    </div>
+<!-- Footer con le informazioni sulla pagina -->
+<footer>
+  <p> Realizzato da Mattia Agosta - Matricola: 1000015612 <br> Corso di Web Programming 2022-23
+</footer>
+</body> 
+</html>

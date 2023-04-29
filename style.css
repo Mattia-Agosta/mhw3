@@ -1,0 +1,385 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 110%;
+  margin: 0px;
+  background-color: lemonchiffon;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+}
+nav {
+  background-color: darkslategrey;
+  padding: 15px 0px;
+}
+#display_pc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_item {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: lemonchiffon;
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: 7px;
+}
+.nav_item:hover {
+  background-color: rgb(255, 194, 173);
+  text-decoration: underline; 
+}
+@media (max-width: 600px) {
+  .nav_item {
+    display: none;
+  }
+}
+#display_mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  #display_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.nav_mobile {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: lemonchiffon;
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: 7px;
+}
+.nav_mobile:hover {
+  background-color: rgb(255, 194, 173);
+  text-decoration: underline; 
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-image: url(images/header.jpg);
+  margin: 0px 10px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 600px) {
+  header {
+    height: 300px;
+  }
+}
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+h1 {
+  font-style: italic;
+  font-size: 4rem;
+  max-width: 780px;
+  text-align: center;
+  color: white;
+  text-shadow: -3px 0px 0px black, 3px 0px 0px black, 0px 3px 0px black, 0px -3px 0px black;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    width: 75%;
+  }
+}
+#propic {
+  margin-top: -100px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#propic img {
+  width: 210px;
+  height: 200px;
+}
+@media (max-width: 600px) {
+  #propic {
+    margin-top: -50px;
+  }
+  #propic img {
+    width: 105px;
+    height: 100px;
+  }
+}
+#propic div {
+  text-align: center;
+  padding-top: 2px;
+}
+#propic_name {
+  font-weight: bold;
+}
+#propic_sub {
+  font-style: italic;
+  color: rgb(50, 50, 50);
+}
+section {
+  line-height: 1.5;
+  width: 66.67%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  section {
+    width: 75%;
+  }
+}
+.entry {
+ margin: 60px 0px;
+ position: relative;
+}
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5rem;
+  margin: 0px 0px 5px 0px;
+  color: darkslategray;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+.subtitle {
+  color: rgb(50, 50, 50)
+}
+p {
+  margin-top: 20px;
+  font-style: normal;
+}
+p em, .ending em {
+  font-weight: bold;
+}
+.ending {
+  margin: 20px 0px;
+}
+.number {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5rem;
+  position: absolute;
+  right: calc(100% + 40px);
+  top: 0px;
+}
+@media (max-width: 600px) {
+  .number {
+    right: calc(100% + 10px);
+    font-size: 2rem;
+  }
+}
+.entry img {
+  max-width: 100%;
+  max-height: 600px;
+}
+footer {
+  background-color: darkslategray;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  footer {
+    padding: 3px;
+  }
+}
+
+/* Parte nuova: API */
+
+#jokeAPI {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+
+h3{
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+#joke_text {
+  font-size: 110%;
+  display: inline-block;
+  max-width: 66%;
+}
+
+#jokeAPI div {
+  display: flex;
+  align-items: center;
+}
+
+#joke_button {
+  margin: 0px 20px;
+  font-size: 110%;
+  height: fit-content;
+}
+
+#joke_content {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  font-style: italic;
+}
+
+#delivery {
+  text-decoration: underline;
+}
+
+#api {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+#iTunesAPI {
+  line-height: 1.5;
+  width: 66.67%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#select_Artist {
+  font-size: 1.2rem;
+  margin: 0px 10px;
+}
+
+#submit {
+  font-size: 1.2rem;
+}
+
+#iTunesAPI label {
+  font-weight: bold;
+}
+
+#canzone {
+  margin-left: -18px;
+}
+
+#iTunesAPI form {
+  font-size: 1.2rem;
+  margin: 20px 0px;
+}
+
+#canzoni {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.canzone {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 45%;
+  background-color: whitesmoke;
+}
+
+.canzone div {
+  font-size: 1rem;
+}
+
+.canzone img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#SpotifyAPI {
+  height: 30%;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: whitesmoke;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#SpotifyAPI div h2 {
+  font-size: 120%;
+}
+
+#SpotifyAPI div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#container {
+  display: flex;
+  padding: 5px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(50, 50, 50);
+  margin: 0px 10px;
+  padding: 5px;
+  width: 20%;
+  max-height: calc(30vh - 55px);
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+.album:hover {
+  background-color: lemonchiffon;
+}
+
+.album-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.album-img img {
+  max-width: calc(20vw - 55px);
+  max-height: calc(30vh - 85px); 
+}
+
+
+/* Visualizzazione mobile per le API */
+
+@media (max-width: 600px) {
+  #SpotifyAPI 
+  {
+    display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  #SpotifyAPI 
+  {
+    display: none;
+  }
+}
